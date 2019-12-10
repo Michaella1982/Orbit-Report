@@ -17,8 +17,8 @@ export class Satellite {
             
     }
     shouldShowWarning(){
-        if (this.type.toUpperCase()!== "SPACE DEBRIS"){
-            return false
+        if (this.type.toUpperCase()=== "SPACE DEBRIS"){
+            return true
         };
     }
 }
