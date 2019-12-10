@@ -6,7 +6,7 @@ export class Satellite {
     type: string;
     operational: boolean;
     launchDate: string;
-
+    
 
     constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
             this.name = name;
@@ -14,7 +14,12 @@ export class Satellite {
             this.orbitType = orbitType;
             this.operational = operational;
             this.launchDate = launchDate;    
-    
+            
+    }
+    shouldShowWarning(){
+        if (this.type.toUpperCase()!== "SPACE DEBRIS"){
+            return false
+        };
     }
 }
 
